@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.leet-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.leet-container h1 {
+    font-size: 5em;
+}
+
+.super-fast-spin {
+    animation: leet-logo-spin infinite 0.1s linear;
+    justify-content: space-between;
+    height: 300px;
+    width: 300px;
+}
+
+.fast-spin {
+    animation: leet-logo-spin infinite 1s linear;
+    height: 80px;
+    width: 80px;
+}
+
+.slow-spin {
+    animation: leet-logo-spin infinite 2s linear;
+    height: 80px;
+    width: 80px;
+}
+
+.leet-header h1 {
+    font-size: 5em;
+}
+
+.leet-header {
+    background-color: #222;
+    height: 150px;
+    padding: 20px;
+    color: white;
+}
+
+.leet-title {
+    font-size: 1.5em;
+}
+
+.leet-intro {
+    font-size: large;
+}
+
+@keyframes leet-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
