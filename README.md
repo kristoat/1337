@@ -1,1 +1,1 @@
-yarn && yarn 1337
+`yarn && yarn 1337`
