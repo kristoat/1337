@@ -9,6 +9,7 @@
     "react-scripts": "1.1.4"
   },
   "scripts": {
-    "1337": "PORT=1337 react-scripts start"
+    "1337": "PORT=1337 react-scripts start",
+    "build": "react-scripts build"
   }
 }
