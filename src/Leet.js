@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import moment from 'moment';
+import logo from './logo.png';
 import './Leet.css';
 
 class Leet extends Component {
@@ -36,44 +37,67 @@ class Leet extends Component {
         <header className="leet-header">
           <h1 className="leet-title">{this.state.currentTime}</h1>
         </header>
-        {this.state.leet && (
+        {this.state.leet ? (
           <div className="leet-container">
             <h1 className="super-fast-spin">1337</h1>
             <h1 className="super-fast-spin">1337</h1>
             <h1 className="super-fast-spin">1337</h1>
+            <img src={logo} className="super-fast-spin" alt="lul" />
+            <img src={logo} className="super-fast-spin" alt="lul" />
             <h1 className="super-fast-spin">1337</h1>
             <h1 className="super-fast-spin">1337</h1>
             <h1 className="super-fast-spin">1337</h1>
-            <img src="https://media1.tenor.com/images/ddd26e2143ded158f364949ea2ef803f/tenor.gif?itemid=5565292" alt="oh boy"/>
-            <img src="https://media1.tenor.com/images/ddd26e2143ded158f364949ea2ef803f/tenor.gif?itemid=5565292" alt="oh boy"/>
-            <img src="https://media1.tenor.com/images/ddd26e2143ded158f364949ea2ef803f/tenor.gif?itemid=5565292" alt="oh boy"/>
-            <img src="https://media1.tenor.com/images/ddd26e2143ded158f364949ea2ef803f/tenor.gif?itemid=5565292" alt="oh boy"/>
-            <img src="https://media1.tenor.com/images/ddd26e2143ded158f364949ea2ef803f/tenor.gif?itemid=5565292" alt="oh boy"/>
-            <img src="https://media1.tenor.com/images/ddd26e2143ded158f364949ea2ef803f/tenor.gif?itemid=5565292" alt="oh boy"/>
+            <img src="https://media1.tenor.com/images/ddd26e2143ded158f364949ea2ef803f/tenor.gif?itemid=5565292"
+                 alt="oh boy" />
+            <img src="https://media1.tenor.com/images/ddd26e2143ded158f364949ea2ef803f/tenor.gif?itemid=5565292"
+                 alt="oh boy" />
+            <img src="https://media1.tenor.com/images/ddd26e2143ded158f364949ea2ef803f/tenor.gif?itemid=5565292"
+                 alt="oh boy" />
+            <img src="https://media1.tenor.com/images/ddd26e2143ded158f364949ea2ef803f/tenor.gif?itemid=5565292"
+                 alt="oh boy" />
+            <img src="https://media1.tenor.com/images/ddd26e2143ded158f364949ea2ef803f/tenor.gif?itemid=5565292"
+                 alt="oh boy" />
+            <img src="https://media1.tenor.com/images/ddd26e2143ded158f364949ea2ef803f/tenor.gif?itemid=5565292"
+                 alt="oh boy" />
+            <img src="https://media1.tenor.com/images/ddd26e2143ded158f364949ea2ef803f/tenor.gif?itemid=5565292"
+                 alt="oh boy" />
+            <img src="https://media1.tenor.com/images/ddd26e2143ded158f364949ea2ef803f/tenor.gif?itemid=5565292"
+                 alt="oh boy" />
             <h1 className="fast-spin">1337</h1>
             <h1 className="fast-spin">1337</h1>
             <h1 className="fast-spin">1337</h1>
+            <img src={logo} className="fast-spin" alt="lul" />
             <h1 className="fast-spin">1337</h1>
             <h1 className="fast-spin">1337</h1>
-            <h1 className="fast-spin">1337</h1>
-            <h1 className="fast-spin">1337</h1>
-            <h1 className="fast-spin">1337</h1>            
+            <h1 className="slow-spin">1337</h1>
+            <img src={logo} className="slow-spin" alt="lul" />
             <h1 className="slow-spin">1337</h1>
             <h1 className="slow-spin">1337</h1>
             <h1 className="slow-spin">1337</h1>
+            <img src={logo} className="slow-spin" alt="lul" />
             <h1 className="slow-spin">1337</h1>
             <h1 className="slow-spin">1337</h1>
             <h1 className="slow-spin">1337</h1>
+            <img src={logo} className="fast-spin" alt="lul" />
             <h1 className="slow-spin">1337</h1>
-            <h1 className="slow-spin">1337</h1>
+            <h1 className="fast-spin">1337</h1>
+            <h1 className="fast-spin">1337</h1>
+            <img src={logo} className="fast-spin" alt="lul" />
             <h1 className="fast-spin">1337</h1>
             <h1 className="fast-spin">1337</h1>
             <h1 className="fast-spin">1337</h1>
+            <img src={logo} className="fast-spin" alt="lul" />
             <h1 className="fast-spin">1337</h1>
             <h1 className="fast-spin">1337</h1>
             <h1 className="fast-spin">1337</h1>
+            <img src={logo} className="fast-spin" alt="lul" />
             <h1 className="fast-spin">1337</h1>
             <h1 className="fast-spin">1337</h1>
+            <h1 className="fast-spin">1337</h1>
+          </div>
+        ) : (
+          <div>
+            <img src={logo} alt="lul" />
           </div>
         )}
       </div>
