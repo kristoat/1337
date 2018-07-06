@@ -21,7 +21,7 @@ class Leet extends Component {
     const hh = 0;
     const mm = 1;
 
-    return (time[hh] === '18' && time[mm] === '01');
+    return (time[hh] === '13' && time[mm] === '37');
   };
 
   tick = () => {
