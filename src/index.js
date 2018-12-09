@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Leet from './Leet';
+import LeetPage from "./components/LeetPage/LeetPage"
+import "./index.css"
 
-ReactDOM.render(<Leet />, document.getElementById('root'));
+ReactDOM.render(<LeetPage />, document.getElementById('root'));
