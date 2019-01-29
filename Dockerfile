@@ -7,5 +7,5 @@ FROM dependencies AS build
 ADD . .
 RUN yarn build
 
-FROM nginx
+FROM nginx:alpine
 COPY --from=build /tmp/1337/build /usr/share/nginx/html
