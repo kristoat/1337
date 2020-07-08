@@ -4,6 +4,23 @@ import LeetAnimations from "../LeetAnimations/LeetAnimations"
 import BassLogo from "./../../assets/BassLogo"
 import { LeetContainer, LeetHeader, LogoWrapper, LeetContent } from "./LeetPageStyles";
 
+let state='scrub'
+
+document.addEventListener('keyup', event => {
+    let key = event.key.toLowerCase();
+    if (key === '1') {
+        state = 'oof'
+    } else if (key === '3' && state === 'oof') {
+        state = 'dayum'
+    } else if (key === '3' && state === 'dayum') {
+        state = 'hot dayum'
+    } else if (key === '7' && state === 'hot dayum') {
+        state = '1337'
+    } else {
+        state = 'scrub'
+    }
+});
+
 class LeetPage extends Component {
     state = {
         currentTime: '',
@@ -39,6 +56,10 @@ class LeetPage extends Component {
                     <h1>{this.state.currentTime}</h1>
                 </LeetHeader>
                 <LeetContent seconds={seconds} leet={this.state.leet}>
+                    {state === "1337" && (<iframe title="1337" width="560" height="315"
+                            src="https://www.youtube.com/embed/GIhcL8K4shg?autoplay=1"
+                            frameBorder="0" allow="autoplay; encrypted-media"></iframe>
+                    )}
                     {this.state.leet ? (
                         <LeetAnimations seconds={seconds} />
                     ) : (
