@@ -16,6 +16,14 @@ document.addEventListener('keyup', event => {
         state = 'hot dayum'
     } else if (key === '7' && state === 'hot dayum') {
         state = '1337'
+    } else if (key === 'l') {
+        state = 'hot'
+    } else if (key === '3' && state === 'hot') {
+        state = 'tub'
+    } else if (key === '3' && state === 'tub') {
+        state = 'time machine'
+    } else if (key === 't' && state === 'time machine') {
+        state = 'l33t t1m3'
     } else {
         state = 'scrub'
     }
@@ -60,7 +68,7 @@ class LeetPage extends Component {
                             src="https://www.youtube.com/embed/GIhcL8K4shg?autoplay=1"
                             frameBorder="0" allow="autoplay; encrypted-media"></iframe>
                     )}
-                    {this.state.leet ? (
+                    {(state === 'l33t t1m3' || this.state.leet) ? (
                         <LeetAnimations seconds={seconds} />
                     ) : (
                         <LogoWrapper>
