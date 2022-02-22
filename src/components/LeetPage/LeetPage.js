@@ -2,7 +2,9 @@ import React, {Component} from 'react';
 import moment from 'moment';
 import LeetAnimations from "../LeetAnimations/LeetAnimations"
 import BassLogo from "./../../assets/BassLogo"
-import { LeetContainer, LeetHeader, LogoWrapper, LeetContent } from "./LeetPageStyles";
+import {LeetContainer, LeetContent, LeetHeader, LogoWrapper} from "./LeetPageStyles";
+import ReactAudioPlayer from 'react-audio-player';
+import bass from "./../../assets/bochkabass.mp3"
 
 let state='scrub'
 
@@ -64,6 +66,12 @@ class LeetPage extends Component {
                     <h1>{this.state.currentTime}</h1>
                 </LeetHeader>
                 <LeetContent seconds={seconds} leet={this.state.leet}>
+                    <ReactAudioPlayer
+                        src={bass}
+                        autoPlay
+                        loop
+                        controls
+                    />
                     {state === "1337" && (<iframe title="1337" width="560" height="315"
                             src="https://www.youtube.com/embed/GIhcL8K4shg?autoplay=1"
                             frameBorder="0" allow="autoplay; encrypted-media"></iframe>

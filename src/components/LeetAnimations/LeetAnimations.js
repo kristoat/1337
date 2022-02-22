@@ -1,12 +1,15 @@
 import React from "react"
-import {GridContainer, LogoWrapper, Spin, getColor} from "./LeetAnimationStyles"
+import {getColor, GridContainer, LogoWrapper, Spin} from "./LeetAnimationStyles"
 import BassLogo from "../../assets/BassLogo";
 import EvolveTron from "../EvolveTron/EvolveTron";
+import {confettiShitUp} from "../confetti";
 
 const LeetAnimations = ({seconds}) => {
     if (seconds < 16) {
         return <EvolveTron/>
     }
+
+    confettiShitUp()
 
     return seconds % 10 < 7 ? <LeetArray seconds={seconds}/> : <BlinkingSpinningBassLogo seconds={seconds}/>
 };
